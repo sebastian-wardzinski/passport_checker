@@ -8,6 +8,7 @@ Instructions:
 2. Populate 'work_ids_to_check.csv' with the correct passport work_ids 
 (16 digit number under the barcode of your reciept), as well as the email 
 you'd like a notification to if the passport from that work_id is ready.
+![alt text](https://github.com/sebastian-wardzinski/passport_checker/blob/main/where_to_find_work_id.png?raw=true)
 
 3. The password for the admin email account (used for sending the emails) is redacted.
 To have this script work you would need to provide the login credentials to your own account.
