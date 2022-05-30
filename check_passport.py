@@ -33,7 +33,7 @@ def check_status_and_send_email(work_id, recipient):
 
     # I'm not sure what the message will be when the passport isn't ready, or what types of messages are possible, but the below message states it is still not ready
     # As new messages are discovered it may be useful to expand to this branching block
-    if (message == 'Twój wniosek został przyjęty w urzędzie. Nie możesz jeszcze odebrać paszportu.'):
+    if (message == 'Twój wniosek został przyjęty w urzędzie. Nie możesz jeszcze odebrać paszportu.' or message == 'Twój paszport jest w realizacji. Nie możesz go jeszcze odebrać.'):
         print(f'Passport with work_id {work_id} is still not ready for pickup.')
     elif (message == 'Nie znaleziono danych dla wniosku'):
         print(f'Work_id {work_id} is not found.')
